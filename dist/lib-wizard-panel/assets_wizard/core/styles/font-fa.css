@@ -1,0 +1,60 @@
+
+@font-face {
+  font-family: WYekan;
+  src: url('../../fonts/yekan-font/yekan-regular.eot');
+  src: url('../../fonts/yekan-font/yekan-regular.eot?#iefix') format('FontName-opentype'),
+       url('../../fonts/yekan-font/yekan-regular.woff') format('woff'),
+       url('../../fonts/yekan-font/yekan-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+	font-family: 'WMitra';
+	src: url('../../fonts/WMitra/MitraWeb-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'WShabnam';
+	  src: url('../../fonts/shabnam/Shabnam-Bold.eot');
+	   src: url('../../fonts/shabnam/Shabnam-Bold.eot?#iefix') format('FontName-opentype'),
+       url('../../fonts/shabnam/Shabnam-Bold.woff') format('woff'),
+       url('../../fonts/shabnam/Shabnam-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'WParastoo';
+	  src: url('../../fonts/parastoo/Parastoo-Bold.eot');
+	   src: url('../../fonts/parastoo/Parastoo-Bold.eot?#iefix') format('FontName-opentype'),
+       url('../../fonts/parastoo/Parastoo-Bold.woff') format('woff'),
+       url('../../fonts/parastoo/Parastoo-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'WIranNastaliq';
+	  src: url('../../fonts/nastaliq/IranNastaliq.eot');
+	   src: url('../../fonts/nastaliq/IranNastaliq.eot?#iefix') format('FontName-opentype'),
+       url('../../fonts/nastaliq/IranNastaliq.woff') format('woff'),
+       url('../../fonts/nastaliq/IranNastaliq.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'WBtitr';
+	  src: url('../../fonts/btitr/BTitrBold.eot');
+	   src: url('../../fonts/btitr/BTitrBold.eot?#iefix') format('FontName-opentype'),
+       url('../../fonts/btitr/BTitrBold.woff') format('woff'),
+       url('../../fonts/btitr/BTitrBold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src:   url('../../fonts/iconmat/flUhRq6tzZclQEJ-Vdg-IuiaDsNc.woff2') format('woff2');
+}
+
+

@@ -1,0 +1,34 @@
+import { OnInit, OnDestroy, EventEmitter } from '@angular/core';
+import { LoadingBackdropService } from '../loading-backdrop.service';
+import { LibReservPanelService } from '../lib-reserv-panel.service';
+import { Month } from './cell-calender-reservation.model';
+import * as i0 from "@angular/core";
+export declare class ComponentRangeDatePickerComponent implements OnInit, OnDestroy {
+    private loadingBackdropService;
+    private libReservPanelService;
+    RentItemID: number;
+    setDateToParent: EventEmitter<any>;
+    cellCalenderReservations: Month[];
+    cellCalenderReservationBackup: Month[];
+    starttDate: string;
+    endDate: string;
+    miladiStartDate: string;
+    miladiEndDate: string;
+    actCalender: string;
+    startSelectedDay: number[];
+    endSelectedDay: number[];
+    next: boolean;
+    prev: boolean;
+    constructor(loadingBackdropService: LoadingBackdropService, libReservPanelService: LibReservPanelService);
+    ngOnInit(): void;
+    ngOnDestroy(): void;
+    nextDay(): void;
+    prevDay(): void;
+    private loadCalenderData;
+    setchoice(indexMonth: number, indexDay: number, istimeout: number): void;
+    SetInRange(indexMonth: number, indexDay: number, istimeout: number): void;
+    SetstartDateToParent(stratDate: string, endDate: string, miladiStartDate: string, miladiEndDate: string): void;
+    clearCalender(): void;
+    static ɵfac: i0.ɵɵFactoryDeclaration<ComponentRangeDatePickerComponent, never>;
+    static ɵcmp: i0.ɵɵComponentDeclaration<ComponentRangeDatePickerComponent, "lib-component-range-date-picker", never, { "RentItemID": "RentItemID"; }, { "setDateToParent": "setDateToParent"; }, never, never, false>;
+}
