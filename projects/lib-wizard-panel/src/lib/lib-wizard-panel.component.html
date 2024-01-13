@@ -1,0 +1,157 @@
+<div class="divRTL">
+  <mat-stepper class="example-stepper" #stepper linear>
+    <mat-step label="{{textconst.STEPPERRESERVATIONONE}}">
+
+      <div><lib-LibReservPanel [RentItemID]="RentItemID"
+          (From_LibReservation_To_LibWizard)="getDataFromReservToWizard($event)"
+          [Capacity]="Capacity"></lib-LibReservPanel>
+      </div>
+
+      <div *ngIf="allPrice>0" class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true rtl-mui-1scxoe7">
+
+        <button mat-button (click)="goNextStep()" class="mat-stepper-next MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium 
+        MuiButton-containedSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root 
+        " tabindex="0" type="button">
+          {{textconst.STEPPERRESERVATIONNEXT}}
+          <span class="MuiTouchRipple-root rtl-mui-w0pj6f"></span>
+        </button>
+      </div>
+    </mat-step>
+
+
+
+    <mat-step *ngIf="personId==0 || goToRegisterLibrary" label="{{textconst.STEPPERRESERVATIONREGISTER}}">
+
+      <lib-LibRegisterPanel (From_LibRegister_To_LibWizard)="getDataFromRegisterToWizard($event)">
+
+      </lib-LibRegisterPanel>
+      <div>
+        <button mat-button matStepperPrevious class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium 
+        MuiButton-containedSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root " tabindex="0"
+          type="button">
+          {{textconst.STEPPERRESERVATIONPREV}}
+          <span class="MuiTouchRipple-root rtl-mui-w0pj6f"></span>
+        </button>
+
+      </div>
+
+    </mat-step>
+
+
+
+    <mat-step label="{{textconst.STEPPERRESERVATIONBILL}}">
+      <div class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-column rtl-mui-1hs2k7l">
+        <div
+          class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-direction-xs-column MuiGrid-grid-xs-true rtl-mui-1qfhtnm">
+          <div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-true rtl-mui-1ag80em">
+            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true rtl-mui-kxu0dz">
+              <p class="MuiTypography-root MuiTypography-body1 rtl-mui-1s1n7ar">
+                {{textconst.STEPPERRESNAME}}
+
+              </p>
+            </div>
+            <div class="MuiGrid-root MuiGrid-item rtl-mui-1wxaqej">
+              <p class="MuiTypography-root MuiTypography-body1 rtl-mui-cmyjyg">{{name+" "+famil}} <span>
+                </span></p>
+            </div>
+          </div>
+          <div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-true rtl-mui-1ag80em">
+            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true rtl-mui-kxu0dz">
+              <p class="MuiTypography-root MuiTypography-body1 rtl-mui-1s1n7ar">
+                {{textconst.STEPPERRESMOBILE}}
+
+              </p>
+            </div>
+            <div class="MuiGrid-root MuiGrid-item rtl-mui-1wxaqej">
+              <p class="MuiTypography-root MuiTypography-body1 rtl-mui-cmyjyg">{{mobile}} <span>
+                </span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="MuiGrid-root MuiGrid-container MuiGrid-direction-xs-column rtl-mui-1hs2k7l">
+        <div *ngIf="countNight>0 && countPerson>0"
+          class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-direction-xs-column MuiGrid-grid-xs-true rtl-mui-1qfhtnm">
+          <div *ngFor="let item of sumeriPersonPrice| keyvalue"
+            class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-true rtl-mui-1ag80em">
+
+            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true rtl-mui-kxu0dz">
+              <p class="MuiTypography-root MuiTypography-body1 rtl-mui-1s1n7ar">
+                {{item.value}} شب {{parseInt(item.key)|number}} <span>
+                  تومان </span>
+
+              </p>
+            </div>
+            <div class="MuiGrid-root MuiGrid-item rtl-mui-1wxaqej">
+              <p class="MuiTypography-root MuiTypography-body1 rtl-mui-cmyjyg">
+                {{mult(item.key,item.value)|number}} <span>
+                  تومان </span></p>
+            </div>
+
+          </div>
+          <div *ngIf="exteraPerson>0"
+            class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-true rtl-mui-1ag80em">
+            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true rtl-mui-kxu0dz">
+              <p class="MuiTypography-root MuiTypography-body1 rtl-mui-1jzh0ia">{{exteraPerson}} نفر
+                ظرفیت اضافه</p>
+            </div>
+            <div class="MuiGrid-root MuiGrid-item rtl-mui-1wxaqej">
+              <p class="MuiTypography-root MuiTypography-body1 rtl-mui-15ctjcr">{{exteraPersonPrice|number}}
+                <span>تومان</span>
+              </p>
+            </div>
+          </div>
+          <div *ngIf="kidCount>0"
+            class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-true rtl-mui-1ag80em">
+            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true rtl-mui-kxu0dz">
+              <p class="MuiTypography-root MuiTypography-body1 rtl-mui-1jzh0ia">{{kidCount}}
+                نفر خردسال
+              </p>
+            </div>
+            <div class="MuiGrid-root MuiGrid-item rtl-mui-1wxaqej">
+              <p class="MuiTypography-root MuiTypography-body1 rtl-mui-15ctjcr">{{kidPrices|number}}
+                <span>تومان</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div *ngIf="allPrice>0"
+          class="MuiGrid-root MuiGrid-item MuiGrid-direction-xs-column MuiGrid-grid-xs-true rtl-mui-177oqzp">
+          <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true rtl-mui-kxu0dz">
+            <hr class="MuiDivider-root MuiDivider-fullWidth rtl-mui-r3x416" />
+          </div>
+          <div class="MuiGrid-root MuiGrid-container MuiGrid-item MuiGrid-grid-xs-true rtl-mui-199jrx5">
+            <div class="MuiGrid-root MuiGrid-item MuiGrid-grid-xs-true rtl-mui-kxu0dz">
+              <p class="MuiTypography-root MuiTypography-body1 rtl-mui-ibdpe5">جمع کل</p>
+            </div>
+            <div class="MuiGrid-root MuiGrid-item rtl-mui-1wxaqej">
+              <p class="MuiTypography-root MuiTypography-body1 rtl-mui-ibdpe5">{{allPrice|number}}
+                <span>تومان</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button (click)="register()" mat-button matStepperNext class="MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium
+       MuiButton-containedSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root" tabindex="0"
+        type="button">
+        {{textconst.STEPPERRESERVATIONSUBMIT}}
+        <span class="MuiTouchRipple-root rtl-mui-w0pj6f"></span>
+      </button>
+    </mat-step>
+
+
+
+
+
+    <mat-step>
+      <ng-template matStepLabel>{{textconst.STEPPERRESERVATIONFINISH}}</ng-template>
+
+      <p class="result_DOCNO" *ngIf="isRegistered==1">{{textconst.ISREGISTERED}}<span
+          style="color:green">{{DocNo}}</span>
+      </p>
+      <p class="result_DOCNO" *ngIf="isRegistered==-1">{{textconst.NOTREGISTERED}}</p>
+    </mat-step>
+  </mat-stepper>
+</div>

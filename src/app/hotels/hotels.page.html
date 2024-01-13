@@ -1,0 +1,305 @@
+<ion-content overflow-scroll="false" >
+<app-toolbar></app-toolbar>
+   <div style="background-image:url('https://golestankooh.com/apppictures/mainback.png'); background-size: cover;">
+
+
+    <div class="thumbs">
+      <a href="#target1"><img src='https://golestankooh.com/apppictures/karvansara/1a.jpg' alt=''></a>
+      <a href="#target2"><img src='https://golestankooh.com/apppictures/karvansara/2a.JPG' alt=''></a>
+      <a href="#target3"><img src='https://golestankooh.com/apppictures/karvansara/3a.JPG' alt=''></a>
+      <a href="#target4"><img src='https://golestankooh.com/apppictures/karvansara/1.jpg' alt=''></a>
+      <a href="#target5"><img src='https://golestankooh.com/apppictures/karvansara/2.JPG' alt=''></a>
+      <a href="#target6"><img src='https://golestankooh.com/apppictures/karvansara/3.JPG' alt=''></a>
+      <a href="#1">
+        <video controls autoplay style="border-radius: 15px;">
+          <source src="https://golestankooh.com/apppictures/karvansara/karvansara.M4V" type="video/mp4">
+        </video>
+      </a>
+      <a href="#1">
+        <video controls style="border-radius: 15px;">
+          <source src="https://golestankooh.com/apppictures/karvansara/02.mp4" type="video/mp4">
+          </video>
+      </a>
+    
+      
+
+    </div>
+    
+    <div class="lightbox">
+
+      <div class="target" id="target1">
+        <div class="content"><img src='https://golestankooh.com/apppictures/karvansara/1a.jpg' alt=''></div>
+        <a href="#target2" title="next"><img src='https://golestankooh.com/apppictures/right.png' alt='' style="width: 50px;"></a>
+      </div>
+      <div class="target" id="target2">
+        <a href="#target1" title="previous"><img src='https://golestankooh.com/apppictures/left.png' alt='' style="width: 50px;"></a>
+        <div class="content"><img src='https://golestankooh.com/apppictures/karvansara/2a.JPG' alt=''></div>
+        <a href="#target3" title="next"><img src='https://golestankooh.com/apppictures/right.png' alt='' style="width: 50px;"></a>
+      </div>
+      <div class="target" id="target3">
+        <a href="#target2" title="previous"><img src='https://golestankooh.com/apppictures/left.png' alt='' style="width: 50px;"></a>
+        <div class="content"><img src='https://golestankooh.com/apppictures/karvansara/3a.JPG' alt=''></div>
+        <a href="#target4" title="next"><img src='https://golestankooh.com/apppictures/right.png' alt='' style="width: 50px;"></a>
+      </div>
+      <div class="target" id="target4">
+        <a href="#target3" title="previous"><img src='https://golestankooh.com/apppictures/left.png' alt='' style="width: 50px;"></a>
+        <div class="content"><img src='https://golestankooh.com/apppictures/karvansara/1.jpg' alt=''></div>
+        <a href="#target5" title="next"><img src='https://golestankooh.com/apppictures/right.png' alt='' style="width: 50px;"></a>
+      </div>
+      <div class="target" id="target5">
+        <a href="#target4" title="previous"><img src='https://golestankooh.com/apppictures/left.png' alt='' style="width: 50px;"></a>
+        <div class="content"><img src='https://golestankooh.com/apppictures/karvansara/2.JPG' alt=''></div>
+        <a href="#target6" title="next"><img src='https://golestankooh.com/apppictures/right.png' alt='' style="width: 50px;"></a>
+      </div>
+      <div class="target" id="target6">
+        <a href="#target5" title="previous"><img src='https://golestankooh.com/apppictures/left.png' alt='' style="width: 50px;"></a>
+        <div class="content"><img src='https://golestankooh.com/apppictures/karvansara/3.JPG' alt=''></div>
+        <a href="#target7" title="next"><img src='https://golestankooh.com/apppictures/right.png' alt='' style="width: 50px;"></a>
+      </div>
+
+      
+
+      <a href="#!" class="close nav"><img src='https://golestankooh.com/apppictures/exit.png' alt='' style="width: 25px;"></a>
+    </div>
+  
+    <div class="buttonn" style="justify-content: center;display:flex;flex-wrap:wrap; margin-top: 2%;">
+    <a class="button button-primary" (click)="goToGallery()">مشاهده ادامه گالری</a>
+
+    </div>
+
+
+
+<!--
+    <div>
+      <ion-card class="card-slider">
+        <ion-slides [options]="slideOpts">
+          <ion-slide class="zoom-without-container brightness-img">
+            <img class="slides-style" src="https://golestankooh.com/apppictures/karvansara/1a.jpg" alt=”slide-1” />
+            <button onclick="location.href='https://golestankooh.com/apppictures/karvansara/1a.jpg'" style="font-family: Ray;">تمام صفحه</button>
+          </ion-slide>
+          <ion-slide class="zoom-without-container brightness-img">
+                <img class="slides-style" src="https://golestankooh.com/apppictures/karvansara/2a.JPG" alt=”slide-2” />
+                <button onclick="location.href='https://golestankooh.com/apppictures/karvansara/2.JPG'" style="font-family: Ray;">تمام صفحه</button>
+          </ion-slide>
+          <ion-slide class="zoom-without-container brightness-img">
+            <img class="slides-style" src="https://golestankooh.com/apppictures/karvansara/3a.JPG" alt=”slide-3” />
+            <button onclick="location.href='https://golestankooh.com/apppictures/karvansara/3.JPG'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/karvansara/1.jpg" alt=”slide-3” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/karvansara/3.jpg'" style="font-family: Ray;">تمام صفحه</button>
+  </ion-slide>
+  <ion-slide class="zoom-without-container brightness-img">
+    <img class="slides-style" src="https://golestankooh.com/apppictures/karvansara/2.JPG" alt=”slide-3” />
+    <button onclick="location.href='https://golestankooh.com/apppictures/karvansara/3.JPG'" style="font-family: Ray;">تمام صفحه</button>
+</ion-slide>
+<ion-slide class="zoom-without-container brightness-img">
+  <img class="slides-style" src="https://golestankooh.com/apppictures/karvansara/3.JPG" alt=”slide-3” />
+  <button onclick="location.href='https://golestankooh.com/apppictures/karvansara/3.JPG'" style="font-family: Ray;">تمام صفحه</button>
+</ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/karvansara/4.JPG" alt=”slide-4” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/karvansara/4.JPG'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/karvansara/5.JPG" alt=”slide-4” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/karvansara/5.JPG'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/karvansara/6.JPG" alt=”slide-4” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/karvansara/6.JPG'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/karvansara/7.JPG" alt=”slide-4” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/karvansara/7.JPG'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/karvansara/8.jpg" alt=”slide-4” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/karvansara/8.jpg'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/karvansara/9.jpg" alt=”slide-4” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/karvansara/9.jpg'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/karvansara/10.jpg" alt=”slide-4” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/karvansara/10.jpg'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/karvansara/11.jpg" alt=”slide-4” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/karvansara/11.jpg'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/karvansara/12.jpg" alt=”slide-4” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/karvansara/12.jpg'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/karvansara/13.jpg" alt=”slide-4” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/karvansara/13.jpg'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/karvansara/14.jpg" alt=”slide-4” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/karvansara/14.jpg'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/karvansara/15.jpg" alt=”slide-4” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/karvansara/15.jpg'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/karvansara/16.jpg" alt=”slide-4” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/karvansara/16.jpg'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/karvansara/17.jpeg" alt=”slide-4” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/karvansara/17.jpeg'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/karvansara/18.jpeg" alt=”slide-4” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/karvansara/18.jpeg'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/karvansara/19.jpeg" alt=”slide-4” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/karvansara/19.jpeg'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/karvansara/20.jpg" alt=”slide-4” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/karvansara/20.jpg'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/karvansara/21.JPG" alt=”slide-4” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/karvansara/21.JPG'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/karvansara/23.jpg" alt=”slide-4” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/karvansara/23.jpg'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/karvansara/24.jpg" alt=”slide-4” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/karvansara/24.jpg'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/karvansara/25.jpg" alt=”slide-4” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/karvansara/25.jpg'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/karvansara/27.jpg" alt=”slide-4” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/karvansara/27.jpg'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/karvansara/29.jpg" alt=”slide-4” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/karvansara/29.jpg'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+
+      <ion-slide class="zoom-without-container brightness-img">
+        <video controls>
+          <source src="https://golestankooh.com/apppictures/karvansara/02.mp4" type="video/mp4">
+          </video>
+      </ion-slide>
+        <ion-slide class="zoom-without-container brightness-img">
+    <video controls>
+      <source src="https://golestankooh.com/apppictures/karvansara/karvansara.M4V" type="video/mp4">
+      </video>
+  </ion-slide>
+
+
+
+        </ion-slides>
+      </ion-card>
+      </div>-->
+<!-- <li title="برای دیدن تصاویر بشتر کلیک کنید " style="margin-left: 18px; color: #002540; text-decoration:none; list-style-type:none; " 
+  (click)="goToGallery()"
+  oncopy="return false" oncut="return false" onpaste="return false"  >
+  <ion-icon style="    vertical-align: sub;" name="arrow-back-outline"></ion-icon>تصاویر بیشتر </li> -->
+
+<ion-card class="card-of-text" style="margin-top: 40px; ;">
+  <div class="logo-style">
+  <img class="logo-style" src="https://golestankooh.com/apppictures/whitelogo.png" style="width: 100px; height:100px; " alt="image">
+</div>
+
+<div class="text-style">
+<span class="text-style">
+  این عمارت در زمینی به مساحت 5000 مترمربع ساخته شده و از سال 1399 به بهره برداری کامل رسیده است. 
+  عمارت چلچراغ شامل :<br>
+  20 اتاق با خدمات کامل هتلی <br>
+  شربختانه <br>
+  شاه نشین<br>
+  پارکینگ و فضای سبز اختصاصی میباشد. 
+  
+  </span>
+</div>
+
+<div class="" style="text-align: center;">
+   <div class="stars " style="text-align: right;">
+    <form action="">
+      <input class="star star-5" id="star-5" type="radio" name="star" title="1"/>
+      <label class="star star-5" for="star-5"></label>
+      <input class="star star-4" id="star-4" type="radio" name="star" title="2"/>
+      <label class="star star-4" for="star-4"></label>
+      <input class="star star-3" id="star-3" type="radio" name="star" title="3"/>
+      <label class="star star-3" for="star-3"></label>
+      <input class="star star-2" id="star-2" type="radio" name="star" title="4"/>
+      <label class="star star-2" for="star-2"></label>
+      <input class="star star-1" id="star-1" type="radio" name="star" title="5"/>
+      <label class="star star-1" for="star-1"></label>
+    </form>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  </div> 
+</div>
+
+
+
+
+<div class="" style="text-align: center; margin-right:15px;">
+  <ion-button
+  style="margin-top: 35px; margin-left: 30px; border-radius: 20px; margin-bottom: 35px; text-align: end;" 
+  color="" id="open-modal"> 
+  <ion-icon name="chatbubbles-outline" style="width: 50px;"></ion-icon>
+  </ion-button>
+ </div>
+ <ion-modal trigger="open-modal" (willDismiss)="onWillDismiss($event)">
+  <ng-template>
+    <ion-header>
+      <ion-toolbar>
+        <ion-title style="text-align: center; font-family: Ray;">نظر خود را وارد کنید</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <form style="" >
+     <div style="">
+       <ion-card style="padding: 25px; border-radius: 20px;
+       border-color: #7e8181; margin-top: 20px;
+       box-shadow: 1px 1px 1px 2px #b6b7b7; max-width:800px; ">
+        <ion-item counter="true" dir="rtl">
+          <ion-label position="floating" color="success" style="font-family: Ray;">نام و نام خانوادگی *</ion-label>
+          <ion-input ></ion-input>
+        </ion-item>
+     <ion-item counter="true" dir="rtl">
+          <ion-label position="floating" style="font-family: Ray;">آدرس ایمیل *</ion-label>
+          <ion-input ></ion-input>
+        </ion-item>
+          <ion-item counter="true" dir="rtl">
+               <ion-label position="floating" color="danger" style="font-family: Ray;">نطر خود را بنویسید</ion-label>
+               <ion-input maxlength="500"></ion-input>
+             </ion-item>
+     </ion-card>
+     <div style="text-align: center; padding-bottom: 20px;">
+          <ion-button color="danger"style="margin-right: 20px; margin-top: 40px;"  (click)="cancel()">
+            <ion-icon name="close-outline" style="font-family: Ray;"></ion-icon>
+                لغو</ion-button>
+          <ion-button color="success" style=" margin-top: 40px;">
+            <ion-icon name="checkmark-outline" style="font-family: Ray;"></ion-icon>
+            ثبت</ion-button>
+        
+        </div>
+     </div>
+     </form>
+  </ng-template>
+   </ion-modal>
+
+
+
+
+
+</ion-card>
+<app-mainfooter></app-mainfooter>
+</div>
+</ion-content>    

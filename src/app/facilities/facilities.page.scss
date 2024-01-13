@@ -1,0 +1,281 @@
+.main1{
+  background-image:url('https://golestankooh.com/apppictures/mainback.png');
+  background-size: cover;
+
+}
+.card-slider{
+  max-height: 275px;
+  border-radius: 20px;
+  margin-top: 10.5%;
+  margin-left: 9%;
+  margin-right: 9%;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 700px) {
+  .card-slider{
+    border-radius: 20px;
+    margin-top: 17%;
+    margin-bottom: 10px;
+  }
+}
+
+
+.brightness-img img {
+  transition: transform 0.5s, filter 1.5s ease-in-out;
+  transform-origin: center center;
+  filter: brightness(80%);
+}
+ 
+/* The Transformation */
+.brightness-img:hover img {
+  filter: brightness(100%);
+  transform: scale(1.1);
+}
+
+.golestan{
+  display: flex;
+  justify-content: center;
+  color: #002540;
+  margin-bottom: 48px;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+@media screen and (max-width: 700px) {
+  .golestan{
+    display: flex;
+    justify-content: center;
+    color: #002540;
+    margin-bottom: 60px;
+  }
+}
+
+.link-style{
+
+}
+link-style:link {
+  text-decoration: none;
+}
+link-style:hover {
+  text-decoration: none;
+}
+.logo-text-style{
+  width: 150px;
+}
+.Menu-Black-Style{
+  size: 1.5%;
+}
+.login-Black-Style{
+  size: 1.5%; 
+}
+
+@media screen and (max-width: 700px) {
+  .menu-pages{
+    background-color: transparent;
+
+
+  }
+}
+@media screen and (max-width: 700px) {
+  .menu-pages-card{
+    box-shadow: none;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    position: relative;
+    justify-content: center;
+    margin-right: 16px;
+    margin-top: 16px;
+    margin-left: 16px;
+
+    }
+}
+@media screen and (max-width: 700px) {
+  .home-detailes-style{
+    visibility: hidden;
+    margin-top: -155px;
+    
+  
+  }
+}
+@media screen and (min-width: 700px) {
+  .home-detailes-style-mobile {
+    visibility: hidden;
+    margin-bottom: -174px;
+
+  
+  }
+}
+@media screen and (max-width: 700px) {
+  .home-detailes-style-mobile {
+  font-size: 16px;
+  display:flex;
+  list-style:none;
+  color:white;
+  text-align: center; 
+  padding-right: 3px;
+  padding-left: 3px;
+  font-weight: bold;
+  justify-content: center;
+  border-radius: 8px;
+  }
+}
+
+.menu-pages{
+  margin-top: -50px;
+  background-color: transparent;
+  
+
+}
+.menu-pages-card{
+  box-shadow: none;
+  background-color: transparent;  
+  }
+  
+
+.logo-text{
+  text-align: end!important;
+  justify-content: end!important;
+  justify-items: end!important;
+
+}
+.home-detailes-style{
+  font-size: 16px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display:flex;  
+  list-style:none;
+  color:white;
+  text-align: center;
+  padding-right: 3px;
+  padding-left: 3px;
+  justify-items: center;
+  justify-content: center;
+  font-weight: bold;
+
+}
+
+.home-detailes-style1:hover{
+  color: #002540;
+  background-color: transparent;
+  border-color: #002540;
+}
+
+  .home-detailes-style1
+  {
+    color: #002540;
+    background-color: transparent;
+    text-align: center;
+  }
+    .bashgah{
+      margin-right: 3px;
+    }
+
+    .Main-Pahe-Bottom{
+      width: 85%;
+      object-fit: cover;
+      object-position: center;
+      margin-top: 30px;
+      border-radius: 20px;
+      max-width: 750px;
+      max-height: 270px;
+    }
+
+      .contactus-style1{
+        vertical-align:text-bottom ;
+        margin-top: 15px;
+        margin-left: 6px;
+        font-size: smaller;
+        size: 15px;
+        border-radius: 15px;
+        width: 153px;
+        height: 25px;
+        color: white;
+        background-color: #002540;
+      }
+      
+
+      .contactus-style2{
+        font-size:13px;
+      }
+
+      div{
+        font-family: Ray;
+      }
+
+
+        .contactus-style{
+          vertical-align:text-bottom ;
+          margin-top: 15px;
+          margin-left: 6px;
+          size: 15px;
+          border-radius: 15px;
+          width: 153px;
+          height: 20px;
+          color: white;
+          background-color: #002540;
+        }
+
+
+          .logotext-style2{
+            text-align: right;
+            justify-content: end!important;
+            justify-items: end!important;}
+
+
+
+            :root[mode=ios] .muli,
+:root[mode=md] .muli{
+  // --ion-font-family:  'B Homa'!important;
+  font-family:  'Ray' !important;
+}
+       
+
+.link-insta{
+  text-decoration-color: whitesmoke;
+}
+.link-insta:link{
+  color: whitesmoke;
+}
+
+@media screen and (min-width: 1200px) {
+  .videomain{
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-top: 10%;
+}
+
+
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 0px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+video {
+  max-width: 100%;
+  height: auto;
+}
+@media screen and (max-width: 1200px) {
+video{
+  max-width: 90%;
+  height: auto;
+  margin-top: 20%;
+  margin-left: 5%;
+
+}
+
+
+}

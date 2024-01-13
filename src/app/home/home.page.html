@@ -1,0 +1,191 @@
+<ion-content  overflow-scroll="false" >
+  <div class="main1">
+  <app-toolbar></app-toolbar>
+    <div>
+      <div class="thumbs">
+        <a href="#1">
+          <video #myVideo controls autoplay style="border-radius: 45px;">
+            <source src="https://golestankooh.com/videos/mainpage.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </a>
+    </div>  
+    
+  <div class="namebrand">
+   <p class="golestan" style="font-size: 16px;">GOLESTANKOOH KHANSAR</p>
+  </div>
+
+        <div  style="text-align: center;">
+        <div class="menu-pages text-center" style="display: flex; justify-content: center;" >
+        <ion-card class="menu-pages-card scroll">
+
+          <div class="home-detailes-style " dir="rtl">
+        
+          <li class="nav-item m-2">
+              <img  (click)="introdution()" src="https://golestankooh.com/apppictures/1.png"  alt="" style="width: 80px; cursor: pointer;">
+              <button class=" mt-1 btn home-detailes-style home-detailes-style1 me-1"  (click)="introdution()" style="width: 98px;"> معرفی مجموعه </button>
+          </li>
+        
+          <li class="nav-item m-2" >
+              <img  (click)="attractions()" src="https://golestankooh.com/apppictures/2.png" alt="" style="width: 80px; cursor: pointer;">
+              <button class=" mt-1 btn home-detailes-style home-detailes-style1" style="width: 115px;" (click)="attractions()">جاذبه های خوانسار</button>
+          </li>
+      
+          <li class="nav-item m-2">
+              <img  (click)="contact()" src="https://golestankooh.com/apppictures/6.png" alt="" style="width: 80px; cursor: pointer;">
+              <button class=" mt-1 btn home-detailes-style home-detailes-style1 me-1 bashgah" style="width: 115px; margin-left: 2px;" (click)="contact()">تماس با ما</button>         
+          </li>
+
+          <li class="nav-item text-center m-2">
+              <img (click)="facilitiesCollection()" src="https://golestankooh.com/apppictures/5.png" alt="" style="width: 80px; cursor: pointer;">         
+              <button class=" mt-1 btn home-detailes-style home-detailes-style1 " style="width: 115px;" (click)="facilitiesCollection()"> امکانات مجموعه </button>
+          </li>
+
+          <li class="nav-item m-2">
+              <img  src="https://golestankooh.com/apppictures/4.png" alt="" style="width: 80px; margin-left: 15px; cursor: pointer;">
+              <a style="text-decoration: none" href="#/reserv/"  target="_blank" rel="noopener noreferrer">
+              <button class=" link-style mt-1 btn home-detailes-style home-detailes-style1" style="width: 115px; margin-left: 15px;"> رزرواسیون آنلاین</button>
+              </a>
+          </li>
+
+          <li class="nav-item m-2">
+              <img  src="https://golestankooh.com/apppictures/7.png" alt="" style="width: 80px; cursor: pointer;">
+              <a style="text-decoration: none" href="https://vr.golestankooh.com/"  target="_blank" rel="noopener noreferrer">
+              <button class=" link-style mt-1 btn home-detailes-style home-detailes-style1" style="width: 98px;"> تور 360 درجه</button>
+              </a>
+
+          <li class="nav-item m-2">
+          <li class="nav-item m-2">
+              <img  (click)="button()" src="https://golestankooh.com/apppictures/7.png" alt="" style="width: 70px; margin-top: 4px; margin-bottom: 6px; cursor: pointer;">
+              <button class=" mt-1 btn home-detailes-style home-detailes-style1" style="width: 120px;" onclick="window.open('https://golestankooh.com/videos/360low_dehkadeh.mp4', '_blank');"> ویدیوی 360 درجه</button>
+          </li>
+
+  
+          <li class="nav-item m-2">
+          <li class="nav-item m-2">
+              <img  (click)="projectsfuture()" src="https://golestankooh.com/apppictures/8.png" alt="" style="width: 80px; cursor: pointer;">
+              <button class=" mt-1 btn home-detailes-style home-detailes-style1" style="width: 98px;" (click)="projectsfuture()"> آینده پروژه</button>
+          </li>
+
+
+          <li class="nav-item m-2">
+          <li class="nav-item m-2">
+              <a href="https://web.golestankooh.com/surveys/" target="_blank"  rel="noopener noreferrer">
+              <img class="tripads" src="https://golestankooh.com/apppictures/surveyicon.png"  alt="trip" style="width: 70px; margin-top: 6px; margin-bottom: 4px; cursor: pointer;"/></a>
+              <button class="mt-1 btn home-detailes-style home-detailes-style1" style="width: 98px;" onclick="window.open('https://web.golestankooh.com/surveys/', '_blank');">نظرسنجی</button>
+          </li>
+
+</div>
+
+
+
+
+        <!--این قسمت مخصوص نسخه موبایل میباشد-->
+
+        <div class="home-detailes-style-mobile " dir="rtl">
+              <li class="nav-item m-2">
+              <img  src="https://golestankooh.com/apppictures/7.png" alt="" style="width: 70px;cursor: pointer;">
+              <a style="text-decoration: none" href="https://vr.golestankooh.com/"  target="_blank" rel="noopener noreferrer">
+              <button class=" link-style mt-1 btn home-detailes-style-mobile home-detailes-style1" style="width: 95px;"> تور 360 درجه</button>
+              </a>
+              </li>
+    
+              <li class="nav-item m-2">
+              <a href="https://web.golestankooh.com/surveys/" target="_blank" rel="noopener noreferrer">
+              <img class="tripads" src="https://golestankooh.com/apppictures/surveyicon.png" alt="trip" style="width: 63px; margin-top: 4px; cursor: pointer;"/></a>
+              <button class="mt-1 btn home-detailes-style-mobile home-detailes-style1" style="width: 98px;" onclick="window.open('https://web.golestankooh.com/surveys/', '_blank');">نظرسنجی</button>
+              </li>
+    
+ 
+    
+              <li class="nav-item m-2">
+              <img  (click)="projectsfuture()" src="https://golestankooh.com/apppictures/8.png" alt="" style="width: 70px; cursor: pointer;">
+              <button class=" mt-1 btn home-detailes-style-mobile home-detailes-style1" style="width: 95px;" (click)="projectsfuture()"> آینده پروژه</button>  
+              </li> 
+  
+        </div>
+
+
+        <div class="home-detailes-style-mobile " dir="rtl">
+
+              <li class="nav-item m-2">
+              <img  src="https://golestankooh.com/apppictures/4.png" alt="" style="width: 70px;  margin-left: -18px; cursor: pointer;">
+              <a style="text-decoration: none" href="https://web.golestankooh.com/reserve/"  target="_blank" rel="noopener noreferrer">
+              <button class=" link-style mt-1 btn home-detailes-style-mobile home-detailes-style1" style="width: 98px; margin-left: -15px; " >رزرواسیون آنلاین</button>
+              </a>
+              </li>
+
+              <li class="nav-item m-2" >
+              <img  (click)="attractions()" src="https://golestankooh.com/apppictures/2.png" alt="" style="width: 70px;cursor: pointer; ">
+              <button class=" mt-1 btn home-detailes-style-mobile home-detailes-style1" style="width: 125px;" (click)="attractions()">جاذبه های خوانسار</button>
+              </li>
+    
+
+              <li class="nav-item text-center m-2">
+              <img (click)="facilitiesCollection()" src="https://golestankooh.com/apppictures/5.png" alt="" style="width: 70px; margin-right: -16px; cursor: pointer;">
+              <button class=" mt-1 btn home-detailes-style-mobile home-detailes-style1" style="width: 100px; margin-right: -13px;" (click)="facilitiesCollection()"> امکانات مجموعه </button>
+              </li>
+        </div>
+
+        <div class="home-detailes-style-mobile " dir="rtl">
+              <li class="nav-item m-2">
+              <img  (click)="introdution()" src="https://golestankooh.com/apppictures/1.png"  alt="" style="width: 70px; margin-left: -2px; cursor: pointer;">
+              <button class=" mt-1 btn home-detailes-style-mobile home-detailes-style1 me-1"  (click)="introdution()" style="width: 95px; margin-left: -2px;"> معرفی مجموعه </button>
+              </li>
+
+
+        <li class="nav-item m-2">
+        <img  (click)="customerClub()" src="https://golestankooh.com/apppictures/5.png" alt="" style="width: 70px; cursor: pointer;">
+        <button class=" mt-1 btn home-detailes-style-mobile home-detailes-style1 me-1 bashgah" style="width: 97px;" (click)="customerClub()">باشگاه مشتریان</button> 
+        </li>
+
+       <li class="nav-item m-2">
+       <img  (click)="button()" src="https://golestankooh.com/apppictures/7.png" alt="" style="width: 72px; margin-top: 1px; cursor: pointer;">
+       <button class=" mt-1 btn home-detailes-style-mobile home-detailes-style1" style="width: 98px;" onclick="window.open('https://golestankooh.com/videos/360low_dehkadeh.mp4', '_blank');"> ویدیو 360</button> 
+       </li>
+       </div>
+
+
+
+
+
+
+</ion-card>
+
+
+
+
+
+        <!-- <ion-button></ion-button> -->
+
+      
+    </div>
+
+  </div>
+    
+   <!-- <div class="row">
+        <div class="row text-center contact-detaile-style " style="justify-content: center; justify-items: center; margin-top: 10px;">
+          <div class="col-4 contactus-style1 contactus-style2" style="margin-left: 20px; color: aliceblue;">
+            <a style="text-decoration: none; color: aliceblue;" href="https://instagram.com/golestankooh_org?igshid=Yzg5MTU1MDY="  target="_blank" rel="noopener noreferrer">
+              <span class=" link-insta  " style="height: 25px; margin-bottom: 7px; color: aliceblue;">
+                <ion-icon name="logo-instagram" style="padding-right: 3.5px; padding-top: 5px;"></ion-icon>
+              </span>Golestankooh_org
+            </a>
+          </div>
+      
+          <div  class="col-4 contactus-style1" style="margin-left: 35px; ">
+            <a href="tel:03157779955"  class="text-center   "
+             style="height: 25px; margin-bottom: 7px; padding-left: 3px; text-decoration: none; color: aliceblue;">
+             <img class="" src="assets\imges\Phone.png"
+             style="width: 20px; height:20px; font-size: smaller; margin-bottom: 7px; margin-right: 6px; padding-top: 5px;">
+             031-5777-9955
+          
+            </a>
+          </div>
+        
+        </div>
+    </div>-->
+    <app-mainfooter></app-mainfooter>
+    </div>
+  </div>
+    </ion-content>

@@ -1,0 +1,122 @@
+@media screen and (min-width: 780px) {
+  .ion-page{
+    background-image:url('https://golestankooh.com/apppictures/tolback.png'); 
+    background-size: 100%; 
+    background-repeat: no-repeat;
+  }
+  }
+  @media screen and (max-width: 700px) {
+    .ion-page{
+      background-image:url('https://golestankooh.com/apppictures/mobiletolback.png'); 
+      background-size: 100%; 
+      background-repeat: no-repeat ;
+      margin-bottom: -25px;
+      height: 100%;
+      
+
+    }
+
+    }
+  .bg-toolbar{
+      width: 1500px;
+      height: 100%;
+    }
+    .menu-item-style{
+      font-weight: bold;
+      color: #002540;
+      font-family: Ray; 
+    }
+    .icon-color{
+      color: #002540;
+    }
+    .menu-logo{
+      width: 80px;
+      height: 90px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      justify-items: center!important;
+      justify-content: center!important;
+      text-align: center; 
+    }
+    
+    .logo-text{
+      text-align: end!important;
+      justify-content: end!important;
+      justify-items: end!important;
+    
+    }
+    .login-Black-Style{
+      margin-top: -11px;
+      
+    }
+    .bar-stable{
+      height: 0;
+
+    }
+
+    @media screen and (max-width: 1200px) {
+      .card-of-text{
+        border-radius: 20px;
+        border-color: #525252;
+        box-shadow: 0px 0px 0px 0px #b6b7b7;
+        width: 85%;
+        margin-left: 7.5%;
+        margin-top: 15%;
+        background-color: transparent;
+   
+      }
+  
+      }
+
+   @media screen and (min-width: 1200px) {
+    .card-of-text{
+      border-radius: 20px;
+      border-color: #525252;
+      box-shadow: 0px 0px 0px 0px #b6b7b7;
+      width: 85%;
+      margin-left: 7.5%;
+      margin-top: 10%;
+      margin-bottom: 6%;
+      background-color: transparent;
+ 
+ 
+    }
+    }
+
+    @media screen and (min-width: 1200px) {
+      .main22{
+        width: 80%;
+        margin-left: 10%;
+        margin-top: -3%;
+   
+      }
+      }
+      @media screen and (max-width: 1200px) {
+        .main22{
+          width: 130%;
+          margin-top: -3%;
+     
+        }
+        }
+
+   .logo-style{
+     text-align: center;
+     margin-top: 10px;
+   }
+   .text-style{
+     padding-right: 25px;
+     padding-left: 25px;
+     padding-bottom: 25px;
+     font-size: 115%;
+     text-align: justify;
+     text-justify: inter-word;
+     line-height: 250%;
+     direction: rtl;
+     color: white;
+     margin-top: 20px;
+     text-align: center;
+   }
+
+  div{
+    font-family: Ray;
+  }

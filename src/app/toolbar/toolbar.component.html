@@ -1,0 +1,80 @@
+<div  class="ion-page" id="main-content">
+  <ion-header [translucent]="true"  class="header-style bar-stable"   collapse="">
+    
+    <ion-toolbar>
+      <ion-buttons slot="end">
+        <ion-menu-button style="margin-top: 1.8vw;">
+          <ion-img class="Menu-Black-Style" src="assets\imges\Menu Black.PNG"></ion-img>
+        </ion-menu-button>
+      </ion-buttons>
+
+      
+
+      <div class="headermenu" style=" justify-content: center; display: flex;">
+        
+
+
+        <img src="https://golestankooh.com/apppictures/account.png" onclick="window.open('https://web.golestankooh.com/sign-up/',);" style="width: 45px; height: 55px; margin-right: 14%;  margin-top: 20px; cursor: pointer;">
+        <img src="https://golestankooh.com/apppictures/header2.png" onclick="window.open('https://maps.app.goo.gl/272SDeF21R1nCfRM9', '_blank');" style="width: 80px; height: 40px; margin-top: 30px; cursor: pointer;">
+        <img src="https://golestankooh.com/apppictures/header4.png" (click)="contact()" style="width: 80px; height: 40px; margin-left: 30px; margin-top: 30px; cursor: pointer;">
+        <img src="https://golestankooh.com/apppictures/header3.png" (click)="introduction()" style="width: 80px; height: 40px; margin-left: 30px; margin-top: 30px; cursor: pointer;">
+
+        <img src="https://golestankooh.com/apppictures/header5.png" onclick="window.open('https://web.golestankooh.com/sign-up/',);" style="width: 80px; height: 40px;margin-left: 20%;  margin-top: 30px; cursor: pointer;">
+        <img src="https://golestankooh.com/apppictures/header6.png" (click)="facilitiesCollection()" style="width: 80px; height: 40px; margin-left: 30px; margin-top: 30px; cursor: pointer;">
+        <img src="https://golestankooh.com/apppictures/header1.png" (click)="home()" style="width: 80px; height: 40px; margin-right: 14%; margin-left: 30px;  margin-top: 30px; cursor: pointer;">
+
+    </div>
+    
+    
+
+     <div class="ion-page">
+      <ion-menu-button slot="start" onclick="location.href='https://web.golestankooh.com/sign-up/'" style="margin-top: 1.8vw; margin-left: 10px; width: 60px; height: 60px; z-index: 1;" >
+        <!--<ion-menu-button slot="start"  (click)="customerClub()" style="margin-top: 1.8vw; margin-left: 10px; width: 60px; height: 60px;">!-->
+          <ion-img class="login-Black-Style" title="ثبت نام" src="https://golestankooh.com/apppictures/account.png"></ion-img>
+          </ion-menu-button>
+      </div>
+    </ion-toolbar>
+  </ion-header>
+</div>
+<ion-menu side="end" content-id="main-content">
+  <ion-header>
+    <ion-toolbar translucent>
+      <ion-title style="text-align: center; justify-content: center; margin-left: 100px;">
+        <ion-img class="menu-logo" src="assets\imges\logo1.png"></ion-img>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content   [fullscreen]="false" scrollEvents="false" >
+    <div>
+    <ion-list dir="rtl">
+      <ion-item>
+        <ion-icon class="icon-color" name="home" slot="start"></ion-icon>
+        <ion-label class="menu-item-style" style="font-weight: fw-bold; cursor: pointer;" (click)="home()">خــانـه</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon class="icon-color" name="location" slot="start"></ion-icon>
+        <ion-label class="menu-item-style" onclick="window.open('https://maps.app.goo.gl/272SDeF21R1nCfRM9', '_blank');">مسیریابی</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon class="icon-color disable-text-selection" name="fast-food" slot="start"></ion-icon>
+        <ion-label class="menu-item-style" (click)="facilitiesCollection()">امکـانات</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon class="icon-color" name="camera" slot="start"></ion-icon>
+        <ion-label class="menu-item-style"  (click)="introduction()">دربـاره مـا</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon class="icon-color" name="alert-circle" slot="start"></ion-icon>
+        <ion-label class="menu-item-style" (click)="contact()">تماس با ما</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon class="icon-color" name="exit" slot="start"></ion-icon>
+        <ion-label class="menu-item-style" onclick="location.href='https://web.golestankooh.com/surveys/'">نظرسنجی</ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+    <ion-title style="text-align: center; justify-content: center;">
+      <ion-img class="logo-text-style" style="margin-left: 30px; margin-top: 80%;" src="assets\imges\Logo Text.png"></ion-img>
+    </ion-title>
+  </ion-content>
+</ion-menu>

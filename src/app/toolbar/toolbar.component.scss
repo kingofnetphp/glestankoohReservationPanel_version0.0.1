@@ -1,0 +1,77 @@
+@media screen and (min-width: 780px) {
+  .ion-page{
+    background-image:url('https://golestankooh.com/apppictures/tolback.png'); 
+    background-size: 100%; 
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  }
+  @media screen and (max-width: 700px) {
+    .ion-page{
+      background-image:url('https://golestankooh.com/apppictures/mobiletolback.png'); 
+      background-size: 100%; 
+      background-repeat: no-repeat ;
+      margin-bottom: -20px;
+
+
+    }
+  }
+    @media screen and (max-width: 1200px) {
+      .headermenu{
+        visibility: hidden;
+  
+  
+      }
+
+    }
+    @media screen and (min-width: 1200px) {
+      .login-Black-Style{
+        visibility: hidden;
+  
+  
+      }
+
+    }
+    @media screen and (min-width: 1200px) {
+      .Menu-Black-Style{
+        visibility: hidden;
+
+      }
+
+    }
+  .bg-toolbar{
+      width: 1500px;
+    }
+    .menu-item-style{
+      font-weight: bold;
+      color: #002540;
+      font-family: Ray; 
+      cursor: pointer;
+    }
+    .icon-color{
+      color: #002540;
+    }
+    .menu-logo{
+      width: 80px;
+      height: 90px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      justify-items: center!important;
+      justify-content: center!important;
+      text-align: center; 
+    }
+    
+    .logo-text{
+      text-align: end!important;
+      justify-content: end!important;
+      justify-items: end!important;
+    
+    }
+    .login-Black-Style{
+      margin-top: -11px;
+      
+    }
+    .bar-stable{
+      height: 0;
+
+    }

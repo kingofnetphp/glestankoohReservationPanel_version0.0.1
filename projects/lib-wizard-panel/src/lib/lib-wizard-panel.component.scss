@@ -1,0 +1,190 @@
+@import "./assets_wizard/core/styles/font-fa.css";
+@import "./assets_wizard/core/styles/main.css";
+@import "./assets_wizard/core/styles/show.css";
+
+.example-stepper {
+  margin-top: 8px;
+}
+
+.mat-mdc-form-field {
+  margin-top: 16px;
+}
+
+.mat-step-header {
+  pointer-events: none;
+  height: 50px;
+}
+
+.rtl {
+  direction: rtl;
+}
+
+.mat-step-text-label {
+  font-family: 'WBtitr' !important;
+}
+
+.rtl-btn-wizard {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  position: relative;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  background-color: transparent;
+  outline: 0;
+  border: 0;
+  margin: 0;
+  border-radius: 0;
+  padding: 0;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  vertical-align: middle;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-text-decoration: none;
+  text-decoration: none;
+  color: inherit;
+  font-family: WYekan;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 1.75;
+  text-transform: uppercase;
+  min-width: 64px;
+  padding: 6px 16px;
+  border-radius: 4px;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms, color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  color: #fff;
+  background-color: #4756B4;
+  box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+  width: 100%;
+  box-shadow: none;
+  font-size: 14px;
+  line-height: 2;
+  border-radius: 100vmax;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.a-btn {
+  background: #3f51b5;
+  padding: 5px;
+  cursor: pointer;
+  float: right;
+  border-radius: 5px;
+  color: white;
+  font-family: 'WYekan';
+}
+
+.ng-star-inserted {
+  font-family: 'WYekan';
+}
+
+.mat-stepper-next {
+  background: #3f51b5;
+  padding: 5px;
+  cursor: pointer;
+  float: left;
+  border-radius: 5px;
+  color: white;
+  font-family: 'WYekan';
+}
+
+.mat-stepper-previous {
+  background: #3f51b5;
+  padding: 5px;
+  cursor: pointer;
+  float: right;
+  border-radius: 5px;
+  color: white;
+  font-family: 'WYekan';
+}
+
+.mat-mdc-snack-bar-label {
+  font-family: 'WBTitr';
+}
+
+lib-libregisterpanel {
+  direction: ltr;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+.result_DOCNO {
+  font-family: 'WBtitr';
+  font-size: 20px;
+}
+
+.mat-horizontal-stepper-header-container {
+background: radial-gradient(#f78001, transparent);
+}
+
+.mat-step-icon-state-edit {
+  display: none;
+}
+.divRTL{
+  direction:rtl;
+}
+.mat-step-header[aria-selected="true"]{
+  background: #fff;
+  border-top: solid 1px black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+}
+.mat-horizontal-content-container{
+  border: 1px solid rgb(244, 240, 240);
+  min-height: 300px;
+}
+.mat-horizontal-stepper-header{
+  padding: 0px !important;
+  margin:0px !important;
+  text-align: center;
+}
+.mat-snack-bar-container{
+  bottom: 0;
+  position: absolute;
+  background: radial-gradient(#f78001, transparent);
+}
+.mat-step-icon-state-number{
+  display: none;
+}
+.mat-stepper-horizontal-line {
+  display: none;
+}
+.mat-step-label{
+  padding: 0 5px;
+}
+.spinner{
+  font-family: WYekan;
+  color:#fff;
+  font-size: 20px;
+}

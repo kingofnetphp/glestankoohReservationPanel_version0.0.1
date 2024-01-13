@@ -1,0 +1,21 @@
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
+import { IonicModule } from '@ionic/angular';
+
+import { BurritoRestaurantPageRoutingModule } from './burrito-restaurant-routing.module';
+
+import { BurritoRestaurantPage } from './burrito-restaurant.page';
+
+
+@NgModule({
+  imports: [
+    CommonModule,
+    FormsModule,
+    IonicModule,
+    BurritoRestaurantPageRoutingModule
+  ],
+  declarations: [BurritoRestaurantPage]
+})
+export class BurritoRestaurantPageModule {}

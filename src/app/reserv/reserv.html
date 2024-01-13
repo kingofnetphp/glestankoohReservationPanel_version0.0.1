@@ -1,0 +1,14 @@
+<div class="component-container">
+  <div style="direction:rtl;width:40%;margin:10px;border:solid 1px black;float:right;">
+    به سیستم ورود نکرده
+    <lib-LibWizardPanel [RentItemID]="RentItemID" [TypeReserve2]="typeReserve2" [Capacity]="Capacity" [personId]="0"
+      [IncomeReasonID]="incomeReasonID" (setDateToParent)="GetOutputValDate($event)"></lib-LibWizardPanel>
+  </div>
+  <br>
+  <div style="direction:rtl;width:40%;margin:10px;border:solid 1px black;float:left;">
+    به سیستم ورود کرده
+    <lib-LibWizardPanel [RentItemID]="RentItemID" [TypeReserve2]="typeReserve2" [Capacity]="Capacity" [personId]="1160524"
+      [IncomeReasonID]="incomeReasonID" (setDateToParent)="GetOutputValDate($event)"></lib-LibWizardPanel>
+  </div>
+</div>
+

@@ -1,0 +1,8 @@
+cd /d C:\project\ionicStarWarsApp2\ionicStarWarsApp
+ng build lib-register-panel
+ npm i C:\project\ionicStarWarsApp2\ionicStarWarsApp\dist\lib-register-panel
+ng build lib-reserv-panel
+npm i C:\project\ionicStarWarsApp2\ionicStarWarsApp\dist\lib-reserv-panel
+ng build lib-wizard-panel
+npm i C:\project\ionicStarWarsApp2\ionicStarWarsApp\dist\lib-wizard-panel
+ng serve --host 0.0.0.0

@@ -1,0 +1,63 @@
+<form>
+  <div *ngIf="!getNameFamil">
+    <div style="text-align:center">
+      <mat-form-field appearance="outline">
+
+        <mat-label>{{textconstants.REGISTERFORMMOBILE}}</mat-label>
+        <input [disabled]="this.registerIsComplate" [(ngModel)]="mobile" name="mobile" (change)="checkvalchange()"
+          (keypress)="checklen($event)" matInput>
+      
+      </mat-form-field>
+    </div>
+    <div *ngIf="codeCancheck" style="text-align:center">
+      <div>
+        <span>
+          {{textconstants.REGISTEREMPTYVALIDCODE}}
+        </span>
+      </div>
+      <mat-form-field  appearance="outline"  style="width: 35%;text-align: center;">
+        <mat-label id="validcodeField" >{{textconstants.REGISTERFORMCODE}}</mat-label>
+        <input [disabled]="this.registerIsComplate" style="text-align: center;" placeholder="- - - - - -" [(ngModel)]="validcode" (keypress)="is6Digit($event)" name="code"
+          matInput>
+      </mat-form-field>
+    </div>
+    <div>{{validtext}}</div>
+    <button *ngIf="smsCanSend" (click)="sendSms()" mat-button class=" MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium 
+          MuiButton-containedSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root "
+          tabindex="0" style="    background: #3f51b5;
+          padding: 5px;
+          cursor: pointer;
+          border-radius: 5px;
+          color: #fff;
+          float:left;
+          font-family: WYekan;" type="button">
+          {{textconstants.REGISTERMOBILESENDCODE}}
+          <span class="MuiTouchRipple-root rtl-mui-w0pj6f"></span>
+        </button>
+  </div>
+  <div *ngIf="getNameFamil">
+    <div style="text-align:center">
+      <mat-form-field appearance="outline">
+
+        <mat-label>{{textconstants.REGISTERFORMLABELNAME}}</mat-label>
+        <input [disabled]="this.registerIsComplate" [(ngModel)]="name" name="name" matInput>
+        <mat-icon matSuffix>portrait</mat-icon>
+      </mat-form-field>
+    </div>
+    <div style="text-align:center">
+      <mat-form-field appearance="outline">
+
+        <mat-label>{{textconstants.REGISTERFORMLABELFAMIL}}</mat-label>
+        <input [disabled]="this.registerIsComplate" [(ngModel)]="famil" name="famil" matInput>
+        <mat-icon matSuffix>portrait</mat-icon>
+      </mat-form-field>
+    </div>
+    <button (click)="SubmitNameFamil()" mat-button class="mat-stepper-next MuiButton-root MuiButton-contained MuiButton-containedPrimary MuiButton-sizeMedium 
+  MuiButton-containedSizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButtonBase-root " tabindex="0"
+      type="button">
+      {{textconstants.REGISTER_NameFAMIL_SUBMIT}}
+      <span class="MuiTouchRipple-root rtl-mui-w0pj6f"></span>
+    </button>
+  </div>
+
+</form>

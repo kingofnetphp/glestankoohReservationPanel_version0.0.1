@@ -1,0 +1,230 @@
+<ion-content overflow-scroll="false" >
+
+<app-toolbar></app-toolbar> 
+<div style="background-image:url('https://golestankooh.com/apppictures/mainback.png'); background-size: cover;" >
+
+
+    <div class="thumbs">
+      <a href="#target1"><img src='https://golestankooh.com/apppictures/talar/1.JPG' alt=''></a>
+      <a href="#target2"><img src='https://golestankooh.com/apppictures/talar/2.JPG' alt=''></a>
+      <a href="#target3"><img src='https://golestankooh.com/apppictures/talar/3.JPG' alt=''></a>
+      <a href="#target4"><img src='https://golestankooh.com/apppictures/talar/4.JPG' alt=''></a>
+      <a href="#target5"><img src='https://golestankooh.com/apppictures/talar/5.JPG' alt=''></a>
+      <a href="#target6"><img src='https://golestankooh.com/apppictures/talar/6.JPG' alt=''></a>
+      <a href="#target7"><img src='https://golestankooh.com/apppictures/poster7.png' alt='' style="width: 100%;"></a>
+    
+      
+
+    </div>
+    
+    <div class="lightbox">
+
+      <div class="target" id="target1">
+        <div class="content"><img src='https://golestankooh.com/apppictures/talar/1.JPG' alt=''></div>
+        <a href="#target2" title="next"><img src='https://golestankooh.com/apppictures/right.png' alt='' style="width: 50px;"></a>
+      </div>
+      <div class="target" id="target2">
+        <a href="#target1" title="previous"><img src='https://golestankooh.com/apppictures/left.png' alt='' style="width: 50px;"></a>
+        <div class="content"><img src='https://golestankooh.com/apppictures/talar/2.JPG' alt=''></div>
+        <a href="#target3" title="next"><img src='https://golestankooh.com/apppictures/right.png' alt='' style="width: 50px;"></a>
+      </div>
+      <div class="target" id="target3">
+        <a href="#target2" title="previous"><img src='https://golestankooh.com/apppictures/left.png' alt='' style="width: 50px;"></a>
+        <div class="content"><img src='https://golestankooh.com/apppictures/talar/3.JPG' alt=''></div>
+        <a href="#target4" title="next"><img src='https://golestankooh.com/apppictures/right.png' alt='' style="width: 50px;"></a>
+      </div>
+      <div class="target" id="target4">
+        <a href="#target3" title="previous"><img src='https://golestankooh.com/apppictures/left.png' alt='' style="width: 50px;"></a>
+        <div class="content"><img src='https://golestankooh.com/apppictures/talar/4.JPG' alt=''></div>
+        <a href="#target5" title="next"><img src='https://golestankooh.com/apppictures/right.png' alt='' style="width: 50px;"></a>
+      </div>
+      <div class="target" id="target5">
+        <a href="#target4" title="previous"><img src='https://golestankooh.com/apppictures/left.png' alt='' style="width: 50px;"></a>
+        <div class="content"><img src='https://golestankooh.com/apppictures/talar/5.JPG' alt=''></div>
+        <a href="#target6" title="next"><img src='https://golestankooh.com/apppictures/right.png' alt='' style="width: 50px;"></a>
+      </div>
+      <div class="target" id="target6">
+        <a href="#target5" title="previous"><img src='https://golestankooh.com/apppictures/left.png' alt='' style="width: 50px;"></a>
+        <div class="content"><img src='https://golestankooh.com/apppictures/talar/6.JPG' alt=''></div>
+        <a href="#target7" title="next"><img src='https://golestankooh.com/apppictures/right.png' alt='' style="width: 50px;"></a>
+      </div>
+      <div class="target" id="target7">
+      <a href="#target6" title="previous"><img src='https://golestankooh.com/apppictures/left.png' alt='' style="width: 50px;"></a>
+      <video controls autoplay style="border-radius: 15px;">
+        <source src="https://golestankooh.com/apppictures/talar/2.mp4" type="video/mp4">
+        <a href="#target8" title="next"><img src='https://golestankooh.com/apppictures/right.png' alt='' style="width: 50px;"></a>
+
+      </video>
+      </div>
+      
+      <a href="#!" class="close nav"><img src='https://golestankooh.com/apppictures/exit.png' alt='' style="width: 25px;"></a>
+    </div>
+  
+    <div class="buttonn" style="justify-content: center;display:flex;flex-wrap:wrap; margin-top: 2%;">
+    <a class="button button-primary" (click)="goToGallery()">مشاهده ادامه گالری</a>
+
+    </div>
+
+
+
+<!--
+    <div>
+      <ion-card class="card-slider">
+        <ion-slides [options]="slideOpts">
+          <ion-slide class="zoom-without-container brightness-img">
+            <img class="slides-style" src="https://golestankooh.com/apppictures/talar/1.JPG" alt=”slide-1” />
+            <button onclick="location.href='https://golestankooh.com/apppictures/talar/1.JPG'" style="font-family: Ray;">تمام صفحه</button>
+          </ion-slide>
+          <ion-slide class="zoom-without-container brightness-img">
+                <img class="slides-style" src="https://golestankooh.com/apppictures/talar/2.JPG" alt=”slide-2” />
+                <button onclick="location.href='https://golestankooh.com/apppictures/talar/2.JPG'" style="font-family: Ray;">تمام صفحه</button>
+          </ion-slide>
+          <ion-slide class="zoom-without-container brightness-img">
+            <img class="slides-style" src="https://golestankooh.com/apppictures/talar/3.JPG" alt=”slide-3” />
+            <button onclick="location.href='https://golestankooh.com/apppictures/talar/3.JPG'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/talar/4.JPG" alt=”slide-4” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/talar/4.JPG'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/talar/5.JPG" alt=”slide-4” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/talar/5.JPG'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/talar/6.JPG" alt=”slide-4” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/talar/6.JPG'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/talar/7.JPG" alt=”slide-4” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/talar/7.JPG'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/talar/8.JPG" alt=”slide-4” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/talar/8.JPG'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/talar/9.JPG" alt=”slide-4” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/talar/9.JPG'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/talar/10.JPG" alt=”slide-4” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/talar/10.JPG'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/talar/11.JPG" alt=”slide-4” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/talar/11.JPG'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/talar/12.JPG" alt=”slide-4” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/talar/12.JPG'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/talar/13.JPG" alt=”slide-4” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/talar/13.JPG'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+      <ion-slide class="zoom-without-container brightness-img">
+        <img class="slides-style" src="https://golestankooh.com/apppictures/talar/14.JPG" alt=”slide-4” />
+        <button onclick="location.href='https://golestankooh.com/apppictures/talar/14.JPG'" style="font-family: Ray;">تمام صفحه</button>
+      </ion-slide>
+
+
+      <ion-slide class="zoom-without-container brightness-img">
+        <video controls>
+          <source src="https://golestankooh.com/apppictures/talar/2.mp4" type="video/mp4">
+          </video>
+      </ion-slide>
+        </ion-slides>
+      </ion-card>
+      </div>-->
+<!-- <li title="برای دیدن تصاویر بشتر کلیک کنید " style="margin-left: 18px; color: #002540; text-decoration:none; list-style-type:none; " 
+  (click)="goToGallery()"
+  oncopy="return false" oncut="return false" onpaste="return false"  >
+  <ion-icon style="    vertical-align: sub;" name="arrow-back-outline"></ion-icon>تصاویر بیشتر </li> -->
+
+<ion-card class="card-of-text" style="margin-top: 40px; ;">
+  <div class="logo-style">
+  <img class="logo-style" src="https://golestankooh.com/apppictures/whitelogo.png" style="width: 100px; height:100px; ">
+</div>
+
+<div class="text-style">
+<span class="text-style">
+  مکانی مناسب برای برگزاری جشن های عقد و عروسی و مراسمات رسمی با چشم اندازی زیبا از دامنه کوه های زاگرس و سد باغکل به مساحت 2400 متر و ظرفیت 700 نفر به همراه تیم تشریفات، آماده پذیرایی از هم وطنان عزیز می باشد .
+  </span>
+</div>
+
+<div class="" style="text-align: center;">
+   <div class="stars " style="text-align: right;">
+    <form action="">
+      <input class="star star-5" id="star-5" type="radio" name="star"/>
+      <label class="star star-5" for="star-5"></label>
+      <input class="star star-4" id="star-4" type="radio" name="star"/>
+      <label class="star star-4" for="star-4"></label>
+      <input class="star star-3" id="star-3" type="radio" name="star"/>
+      <label class="star star-3" for="star-3"></label>
+      <input class="star star-2" id="star-2" type="radio" name="star"/>
+      <label class="star star-2" for="star-2"></label>
+      <input class="star star-1" id="star-1" type="radio" name="star"/>
+      <label class="star star-1" for="star-1"></label>
+    </form>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  </div> 
+</div>
+
+
+
+
+<div class="" style="text-align: center; margin-right:15px;">
+  <ion-button
+  style="margin-top: 35px; margin-left: 30px; border-radius: 20px; margin-bottom: 35px; text-align: end;" 
+  color="" id="open-modal"> 
+  <ion-icon name="chatbubbles-outline" style="width: 50px;"></ion-icon>
+  </ion-button>
+ </div>
+ <ion-modal trigger="open-modal" (willDismiss)="onWillDismiss($event)">
+  <ng-template>
+    <ion-header>
+      <ion-toolbar>
+        <ion-title style="text-align: center; font-family: Ray;">نظر خود را وارد کنید</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <form style="" >
+     <div style="">
+       <ion-card style="padding: 25px; border-radius: 20px;
+       border-color: #7e8181; margin-top: 20px;
+       box-shadow: 1px 1px 1px 2px #b6b7b7; max-width:800px; ">
+        <ion-item counter="true" dir="rtl">
+          <ion-label position="floating" color="success" style="font-family: Ray;">نام و نام خانوادگی *</ion-label>
+          <ion-input ></ion-input>
+        </ion-item>
+     <ion-item counter="true" dir="rtl">
+          <ion-label position="floating" style="font-family: Ray;">آدرس ایمیل *</ion-label>
+          <ion-input ></ion-input>
+        </ion-item>
+          <ion-item counter="true" dir="rtl">
+               <ion-label position="floating" color="danger" style="font-family: Ray;">نطر خود را بنویسید</ion-label>
+               <ion-input maxlength="500"></ion-input>
+             </ion-item>
+     </ion-card>
+     <div style="text-align: center; padding-bottom: 20px;">
+          <ion-button color="danger"style="margin-right: 20px; margin-top: 40px;"  (click)="cancel()">
+            <ion-icon name="close-outline" style="font-family: Ray;"></ion-icon>
+                لغو</ion-button>
+          <ion-button color="success" style=" margin-top: 40px;">
+            <ion-icon name="checkmark-outline" style="font-family: Ray;"></ion-icon>
+            ثبت</ion-button>
+        
+        </div>
+     </div>
+     </form>
+  </ng-template>
+   </ion-modal>
+
+
+
+
+</ion-card>
+<app-mainfooter></app-mainfooter>
+
+</div>
+</ion-content>

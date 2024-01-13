@@ -1,0 +1,19 @@
+@font-face {
+     font-family: 'B Homa';
+     src: url('assets/fonts/B Homa_p30download.com.ttf');
+     font-style: normal;
+     font-weight: 400;
+     font-display: swap;
+   }
+   @font-face {
+    font-family: 'Ray';
+    font-style: normal;
+    font-weight: normal;
+    src: url('assets/fonts/Ray.ttf');
+  }
+  @font-face {
+    font-family: 'Ray-Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('assets/fonts/Ray-Bold.ttf');
+  }
